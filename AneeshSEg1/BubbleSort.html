@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Sorting an Array</h2>
+<div>
+<p id="demo">Click to Sort the Array by Bubble Sort[1,9,6,7]</p>
+
+<button type="button" onclick="myFunction([1,9,6,7])">Try it</button>
+</div>
+<script>
+function myFunction(array1) {
+  let sorted = array1;
+  let k,j;
+  for(j=0;j<=2;j++)
+  {
+  for(let i=0;i<=2;i++){
+      if(sorted[i+1]<sorted[i]){
+          sorted[i]=k;
+          sorted[i]=sorted[i+1];
+          sorted[i+1]=k;
+      }
+    }
+   }
+  document.getElementById("demo").innerHTML = sorted;
+}
+</script>
+
+</body>
+</html>
